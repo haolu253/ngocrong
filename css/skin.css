@@ -1,0 +1,119 @@
+/* Text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-text);
+}
+
+a,
+p {
+    color: var(--color-text-light);
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+/* Svg */
+svg,
+svg path {
+    fill: var(--color-dark);
+    stroke: var(--color-dark);
+}
+
+/* Transition gradient text */
+.transition-gradient-text {
+    background: linear-gradient(300deg, var(--color-primary), var(--color-secondary), var(--color-primary));
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 4s ease infinite;
+    user-select: none;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Background */
+body {
+    background-color: var(--color-bg);
+}
+
+::selection {
+    color: var(--color-light);
+    background-color: var(--color-primary);
+}
+
+.body-bg {
+    background-color: var(--color-bg-body);
+}
+
+.primary-bg {
+    background-color: var(--color-primary);
+}
+
+.secondary-bg {
+    background-color: var(--color-secondary);
+}
+
+/* Button */
+a.custom-btn {
+    color: var(--color-text);
+    border: 1px solid var(--color-border-2);
+}
+
+a.custom-btn:hover {
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+a.custom-btn.custom-btn-primary {
+    color: var(--color-light);
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+a.custom-btn.custom-btn-primary:hover {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid var(--color-border);
+}
+
+.footer-sub,
+.footer-main {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.footer-social a {
+    background-color: var(--color-gray);
+}
+
+.footer-social a:hover {
+    background-color: var(--color-primary);
+}
+
+.footer-social a:hover svg,
+.footer-social a:hover svg path {
+    fill: var(--color-light);
+    stroke: var(--color-light);
+}
+
+.footer-copyright a {
+    color: var(--color-primary);
+}

@@ -1,0 +1,48 @@
+* {
+    font-family: 'Merriweather';
+    line-height: 170%;
+    font-size: var(--global-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+a,
+p {
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-underline-offset: var(--gap-xs);
+}
+
+/* Button */
+.custom-btn {
+    font-size: calc(var(--global-text) * 0.875);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    user-select: none;
+}
+
+/* Footer */
+.footer-main h4 {
+    margin-bottom: var(--global-spacing);
+}
+
+.footer-main a,
+.footer-main p {
+    margin-bottom: var(--spacing-sm-1);
+}
+
+.footer-copyright,
+.footer-copyright a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--global-text) * 0.875);
+    text-align: center;
+}
+
+.footer-copyright a {
+    font-weight: bold;
+}
