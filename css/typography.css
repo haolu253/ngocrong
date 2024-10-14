@@ -6,6 +6,7 @@
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
+    padding-bottom: var(--gap-xs);
 }
 
 a,
@@ -17,6 +18,11 @@ a {
     text-underline-offset: var(--gap-xs);
 }
 
+.transition-gradient-text {
+    font-family: 'Merriweather';
+    font-weight: bold;
+}
+
 /* Button */
 .custom-btn {
     font-size: calc(var(--global-text) * 0.875);
@@ -24,6 +30,11 @@ a {
     text-transform: uppercase;
     text-decoration: none !important;
     user-select: none;
+}
+
+/* Header */
+a.header-title {
+    font-size: calc(var(--global-text) * 1.125);
 }
 
 /* Footer */

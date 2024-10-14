@@ -26,8 +26,8 @@ svg path {
 
 /* Transition gradient text */
 .transition-gradient-text {
-    background: linear-gradient(300deg, var(--color-primary), var(--color-secondary), var(--color-primary));
-    background-size: 200% 200%;
+    background: linear-gradient(300deg, var(--color-primary), var(--color-primary-dark), var(--color-primary));
+    background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradientAnimation 4s ease infinite;
@@ -68,6 +68,14 @@ body {
     background-color: var(--color-secondary);
 }
 
+.dark-bg {
+    background-color: var(--color-dark);
+}
+
+.light-bg {
+    background-color: var(--color-light);
+}
+
 /* Button */
 a.custom-btn {
     color: var(--color-text);
@@ -75,8 +83,8 @@ a.custom-btn {
 }
 
 a.custom-btn:hover {
-    color: var(--color-secondary);
-    border-color: var(--color-secondary);
+    color: var(--color-primary);
+    border-color: var(--color-primary);
 }
 
 a.custom-btn.custom-btn-primary {
@@ -88,6 +96,41 @@ a.custom-btn.custom-btn-primary {
 a.custom-btn.custom-btn-primary:hover {
     background-color: var(--color-secondary);
     border-color: var(--color-secondary);
+}
+
+a.custom-btn.custom-btn-dark {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border-color: var(--color-dark);
+}
+
+a.custom-btn.custom-btn-dark:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+/* Header */
+.header {
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.header-left {
+    border-right: 1px solid var(--color-border);
+}
+
+.hamburger:before,
+.hamburger:after {
+    border-bottom: 2px solid var(--color-dark);
+}
+
+.hamburger span {
+    background-color: var(--color-dark);
+}
+
+.side-menu {
+    background-color: var(--color-light);
+    border-right: 1px solid var(--color-border);
 }
 
 /* Footer */
@@ -102,16 +145,11 @@ footer {
 
 .footer-social a {
     background-color: var(--color-gray);
+    border: 2px solid var(--color-gray);
 }
 
 .footer-social a:hover {
-    background-color: var(--color-primary);
-}
-
-.footer-social a:hover svg,
-.footer-social a:hover svg path {
-    fill: var(--color-light);
-    stroke: var(--color-light);
+    border-color: var(--color-primary);
 }
 
 .footer-copyright a {

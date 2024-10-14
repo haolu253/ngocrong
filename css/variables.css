@@ -1,6 +1,8 @@
 :root {
     /* Primary color */
     --color-primary: #00A76F;
+    --color-primary-light: #F0FDF4;
+    --color-primary-dark: #003E2D;
 
     /* Secondary color */
     --color-secondary: #FFAB00;
@@ -11,7 +13,7 @@
     --color-gray: #EEEEEF;
 
     /* Sub color */
-    --color-bg-body: #FFF9EE;
+    --color-bg-body: var(--color-primary-light);
     --color-bg: var(--color-light);
     --color-border: #E8E8E8;
     --color-border-2: #212B3633;
@@ -42,7 +44,7 @@
     --spacing-sm-1: calc(var(--spacing) * 0.25);
     --spacing-sm-2: calc(var(--spacing) * 0.5);
     --spacing-sm-3: calc(var(--spacing) * 0.75);
-    --global-spacing: calc(var(--spacing));
+    --global-spacing: var(--spacing);
     --spacing-lg-1: calc(var(--spacing) * 1.5);
     --spacing-lg-2: calc(var(--spacing) * 2);
     --spacing-lg-3: calc(var(--spacing) * 2.5);
@@ -56,4 +58,8 @@
 
     /* Text */
     --global-text: var(--custom-rem);
+
+    /* Header */
+    --header-height: calc(var(--custom-rem) * 4);
+    --header-logo-width: calc(var(--custom-rem) * 10);
 }
