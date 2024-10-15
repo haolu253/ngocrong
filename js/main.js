@@ -6,6 +6,7 @@ $(document).ready(function () {
     });
 
     $(document).on('click', function (e) {
+        updateHeaderDimensions();
         if (!$(e.target).closest('.hamburger, .side-menu').length) {
             $('.hamburger').removeClass('active-menu');
             $('.side-menu').removeClass('side-menu-active');

@@ -24,6 +24,10 @@ svg path {
     stroke: var(--color-dark);
 }
 
+.primary-text {
+    color: var(--color-primary);
+}
+
 /* Transition gradient text */
 .transition-gradient-text {
     background: linear-gradient(300deg, var(--color-primary), var(--color-primary-dark), var(--color-primary));
@@ -48,7 +52,7 @@ svg path {
 
 /* Background */
 body {
-    background-color: var(--color-bg);
+    background-color: var(--color-light);
 }
 
 ::selection {
@@ -56,12 +60,12 @@ body {
     background-color: var(--color-primary);
 }
 
-.body-bg {
-    background-color: var(--color-bg-body);
-}
-
 .primary-bg {
     background-color: var(--color-primary);
+}
+
+.primary-light-bg {
+    background-color: var(--color-primary-light);
 }
 
 .secondary-bg {
@@ -111,7 +115,7 @@ a.custom-btn.custom-btn-dark:hover {
 
 /* Header */
 .header {
-    background-color: var(--color-bg);
+    background-color: var(--color-light);
     border-bottom: 1px solid var(--color-border);
 }
 
@@ -131,6 +135,18 @@ a.custom-btn.custom-btn-dark:hover {
 .side-menu {
     background-color: var(--color-light);
     border-right: 1px solid var(--color-border);
+}
+
+.side-menu ul li:hover {
+    background-color: var(--color-gray);
+}
+
+.side-menu-top ul li {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.side-menu-bot ul li {
+    border-top: 1px solid var(--color-border);
 }
 
 /* Footer */

@@ -35,6 +35,16 @@ a {
 /* Header */
 a.header-title {
     font-size: calc(var(--global-text) * 1.125);
+    white-space: nowrap;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+}
+
+.profile-card h3 {
+    font-size: var(--global-text);
+    text-align: center;
 }
 
 /* Footer */

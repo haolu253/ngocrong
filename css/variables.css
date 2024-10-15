@@ -13,8 +13,6 @@
     --color-gray: #EEEEEF;
 
     /* Sub color */
-    --color-bg-body: var(--color-primary-light);
-    --color-bg: var(--color-light);
     --color-border: #E8E8E8;
     --color-border-2: #212B3633;
     --color-shadow: #DCDCDC;

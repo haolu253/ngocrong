@@ -37,19 +37,25 @@ header {
 .header-left {
     width: fit-content;
     padding: var(--global-spacing) var(--spacing-lg-1);
-    gap: var(--global-gap);
+    gap: var(--gap-xl);
+}
+
+.header-right {
+    width: calc(100% - var(--header-logo-width));
+    padding: var(--global-spacing) var(--spacing-lg-1);
 }
 
 .hamburger-wrapper {
-    width: calc(var(--custom-rem) * 1.25);
-    height: calc(var(--custom-rem) * 0.75);
+    width: calc(var(--custom-rem));
+    height: calc(var(--custom-rem) * 0.625);
+    margin-bottom: var(--gap-xs);
     position: relative;
     cursor: pointer;
 }
 
 .hamburger {
-    width: calc(var(--custom-rem) * 1.25);
-    height: calc(var(--custom-rem) * 0.75);
+    width: calc(var(--custom-rem));
+    height: calc(var(--custom-rem) * 0.625);
     position: absolute;
 }
 
@@ -121,19 +127,41 @@ header {
 
 .side-menu ul li {
     list-style-type: none;
-    border-bottom: 1px solid var(--color-border);
-}
-
-.side-menu ul li:hover {
-    background-color: var(--color-gray);
 }
 
 .side-menu ul li a {
-    display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
     padding: var(--gap-sm) var(--spacing-lg-1);
-    font-size: calc(var(--global-text) * 1.125);
-    text-decoration: none;
+}
+
+.side-menu ul li a img,
+.side-menu ul li a svg {
+    width: 15px;
+    height: 15px;
+    margin: 0 var(--gap-sm) var(--gap-xs) 0;
+}
+
+.profile-card {
+    gap: var(--gap-xs);
+    margin: var(--spacing-lg-1);
+    padding: var(--spacing-lg-1);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.profile-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card img {
+    width: calc(var(--custom-rem) * 4);
+    height: calc(var(--custom-rem) * 4);
+    object-fit: contain;
+    border-radius: var(--round-border-radius);
 }
 
 /* Footer */
