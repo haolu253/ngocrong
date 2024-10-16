@@ -24,20 +24,66 @@
     <!-- Header -->
     <header>
         <div class="header">
-            <div class="header-lg d-flex">
-                <div class="header-left d-flex justify-content-center align-items-center">
+            <div class="header d-flex justify-content-between">
+                <div class="header-left d-flex justify-content-start align-items-center">
                     <a href="/index.html" class="header-title transition-gradient-text">Hoang Nhut Nam</a>
-                    <div class="hamburger-wrapper">
+                    <div class="hamburger-wrapper d-none d-lg-block">
                         <div class="hamburger"><span></span></div>
                     </div>
                 </div>
-                <div class="header-right header-right-lg d-none d-md-flex justify-content-between align-items-center">
-                    <div class="float-left">
-                        afasd
+                <div class="header-right header-right-lg d-none d-lg-flex justify-content-between align-items-center">
+                    <div class="float-left col-lg-4 p-0">
+                        <div class="search-box">
+                            <input type="text" placeholder="Tìm kiếm..." />
+                            <button class="search-btn" type="submit">
+                                <img src="./img/search.svg" alt="">
+                            </button>
+                            <button class="clear-btn" type="button">
+                                <img src="./img/clear.svg" alt="">
+                            </button>
+                        </div>
                     </div>
-                    <div class="float-right d-flex flex-wrap-nowrap">
-                        <a href="javascript:void(0)" class="custom-btn custom-btn-rounded mr-3">Đăng nhập</a>
-                        <a href="javascript:void(0)" class="custom-btn custom-btn-dark custom-btn-rounded">Đăng ký</a>
+                    <div class="float-right header-button-group col-lg-8 d-flex flex-wrap-nowrap justify-content-end align-items-center p-0">
+                        <div class="notification-container has-noti">
+                            <img class="notification-bell" src="./img/noti.svg" alt="" />
+                            <div class="notification-dropdown d-none">
+                                <p>Không có thông báo mới</p>
+                                <a href="javascript:void(0)">No new notifications - No new notifications - No new notifications - No new notifications</a>
+                                <a href="javascript:void(0)">No new notifications - No new notifications - No new notifications - No new notifications</a>
+                            </div>
+                        </div>
+                        <a class="header-cart" href="javascript:void(0)">
+                            <img src="./img/cart.svg" alt="">
+                            <span>0</span>
+                        </a>
+                        <a href="javascript:void(0)"><img src="./img/store.svg" alt=""></a>
+                        <!-- Not login -->
+                        <!-- <a href="javascript:void(0)" class="custom-btn custom-btn-rounded mr-3">Đăng nhập</a>
+                        <a href="javascript:void(0)" class="custom-btn custom-btn-dark custom-btn-rounded">Đăng ký</a> -->
+                        <!-- Logged in -->
+                        <!-- <a href="javascript:void(0)" class="user-button custom-btn custom-btn-rounded mr-3 d-none">
+                            <img src="./img/account.svg" alt="" srcset="">
+                            <span>-</span>
+                            User
+                        </a>
+                        <a href="javascript:void(0)" class="custom-btn custom-btn-dark custom-btn-rounded d-none">Đăng xuất</a> -->
+                    </div>
+                </div>
+                <div class="header-right header-right-mb header-button-group d-flex d-lg-none justify-content-end align-items-center">
+                    <div class="notification-container has-noti">
+                        <img class="notification-bell" src="./img/noti.svg" alt="" />
+                        <div class="notification-dropdown d-none">
+                            <p>No new notifications</p>
+                            <a href="javascript:void(0)">No new notifications - No new notifications - No new notifications</a>
+                        </div>
+                    </div>
+                    <a class="header-cart" href="javascript:void(0)">
+                        <img src="./img/cart.svg" alt="">
+                        <span>0</span>
+                    </a>
+                    <a href="javascript:void(0)"><img src="./img/store.svg" alt=""></a>
+                    <div class="hamburger-wrapper d-lg-none">
+                        <div class="hamburger"><span></span></div>
                     </div>
                 </div>
             </div>
@@ -49,9 +95,19 @@
                     <li><a href="javascript:void(0)"><img src="./img/about.svg" alt="">Giới thiệu</a></li>
                     <li><a href="javascript:void(0)"><img src="./img/timeline.svg" alt="">Timeline</a></li>
                     <li><a href="javascript:void(0)"><img src="./img/topic.svg" alt="">Chủ đề</a></li>
-                    <li><a href="javascript:void(0)"><img src="./img/contact.svg" alt="">Liên hệ</a></li>
-                    <li><a href="javascript:void(0)"><img src="./img/cup.svg" alt="">Donate</a></li>
+                    <li><a href="javascript:void(0)"><img src="./img/store.svg" alt="">Cửa hàng</a></li>
                 </ul>
+                <div class="side-search-box d-lg-none">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm kiếm..." />
+                        <button class="search-btn" type="submit">
+                            <img src="./img/search.svg" alt="">
+                        </button>
+                        <button class="clear-btn" type="button">
+                            <img src="./img/clear.svg" alt="">
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="side-menu-bot">
                 <div class="profile-card primary-light-bg container-soft-round d-flex flex-column justify-content-center align-items-center">
@@ -60,8 +116,8 @@
                     <a href="javascript:void(0)" class="custom-btn custom-btn-dark custom-btn-rounded">Theo dõi</a>
                 </div>
                 <ul>
-                    <li><a href="javascript:void(0)"><img src="./img/bookmarks.svg" alt="">Bookmark</a></li>
-                    <li><a href="javascript:void(0)"><img src="./img/account.svg" alt="">Tài khoản</a></li>
+                    <li><a href="javascript:void(0)"><img src="./img/contact.svg" alt="">Liên hệ</a></li>
+                    <li><a href="javascript:void(0)"><img src="./img/cup.svg" alt="">Donate</a></li>
                 </ul>
             </div>
         </div>
@@ -78,18 +134,18 @@
     <!-- Footer -->
     <footer>
         <div class="footer custom-container">
-            <div class="footer-sub d-flex flex-column flex-md-row">
-                <div class="footer-sub-text col-12 col-md-6 p-0">
+            <div class="footer-sub d-flex flex-column flex-lg-row">
+                <div class="footer-sub-text col-12 col-lg-6 p-0">
                     <h3>Bạn chưa là thành viên ?</h3>
-                    <p>Đăng ký ngay để tận hưởng toàn bộ nội dung độc quyền dành riêng cho thành viên và nhận bài viết mới hàng tuần qua email.</p>
+                    <p>Theo dõi ngay để tận hưởng toàn bộ nội dung độc quyền dành riêng cho thành viên và nhận bài viết mới hàng tuần qua email.</p>
                 </div>
-                <div class="footer-sub-action col-12 col-md-6 mt-2 mt-md-0 p-0 d-flex justify-content-start justify-content-md-end align-items-center">
-                    <a href="javascript:void(0)" class="custom-btn custom-btn-dark custom-btn-rounded mr-3">Đăng ký</a>
+                <div class="footer-sub-action col-12 col-lg-6 mt-2 mt-lg-0 p-0 d-flex justify-content-start justify-content-lg-end align-items-center">
+                    <a href="javascript:void(0)" class="custom-btn custom-btn-dark custom-btn-rounded mr-3">Theo dõi</a>
                     <a href="javascript:void(0)" class="custom-btn custom-btn-rounded">Liên hệ</a>
                 </div>
             </div>
-            <div class="footer-main d-flex flex-column flex-md-row">
-                <div class="col-12 col-md-4 mb-4 mb-md-0 p-0 pr-md-2">
+            <div class="footer-main d-flex flex-column flex-lg-row">
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0 p-0 pr-lg-2">
                     <h4 class="transition-gradient-text">Hoang Nhut Nam's Blog</h4>
                     <p>😊 Chào mừng bạn đến với không gian của Nam ! Khám phá những góc nhìn mới về cuộc sống và tìm cảm hứng từ những bài viết thú vị ! 🫶</p>
                     <div class="footer-social mt-2 d-flex flex-wrap">
@@ -101,8 +157,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-1 d-none d-md-block"></div>
-                <div class="col-12 col-md-3 mb-4 mb-md-0 p-0 px-md-2">
+                <div class="col-1 d-none d-lg-block"></div>
+                <div class="col-12 col-lg-3 mb-4 mb-lg-0 p-0 px-lg-2">
                     <h4>Chuyên mục</h4>
                     <a href="javascript:void(0)">Tâm sự mỏng</a>
                     <a href="javascript:void(0)">Tâm sự dày</a>
@@ -110,7 +166,7 @@
                     <a href="javascript:void(0)">Lén nhặt chuyện đời</a>
                     <a href="javascript:void(0)">Seeding</a>
                 </div>
-                <div class="col-12 col-md-4 p-0 pl-md-2">
+                <div class="col-12 col-lg-4 p-0 pl-lg-2">
                     <h4>Kết nối</h4>
                     <a href="https://www.axios.vn/" target="_blank">axios.vn - Giải pháp chuyên nghiệp cho doanh nghiệp</a>
                     <a href="https://www.nhatro.app/" target="_blank">Room Easy - Quản lý phòng trọ Chuyên nghiệp</a>

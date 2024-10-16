@@ -23,6 +23,11 @@ a {
     font-weight: bold;
 }
 
+/* Input */
+input {
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+
 /* Button */
 .custom-btn {
     font-size: calc(var(--global-text) * 0.875);
@@ -36,6 +41,25 @@ a {
 a.header-title {
     font-size: calc(var(--global-text) * 1.125);
     white-space: nowrap;
+}
+
+.notification-dropdown a,
+.notification-dropdown p {
+    font-size: calc(var(--global-text) * 0.875);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.notification-dropdown p {
+    white-space: nowrap;
+}
+
+.header-cart span {
+    font-size: calc(var(--global-text) * 0.55);
 }
 
 .side-menu ul li a {

@@ -16,11 +16,18 @@
     --color-border: #E8E8E8;
     --color-border-2: #212B3633;
     --color-shadow: #DCDCDC;
+    --color-red: #FF0000;
 
     /* Text color */
     --color-text: #1A1A1A;
     --color-text-light: #333333;
     --color-text-lighter: #666666;
+
+    /* Breakpoints */
+    --sm: 576px;
+    --md: 768px;
+    --lg: 992px;
+    --xl: 1200px;
 
     /* Width */
     --global-max-width: 1280px;
@@ -51,7 +58,7 @@
     --spacing-lg-6: calc(var(--spacing) * 6);
 
     /* Border */
-    --global-border-radius: 12px;
+    --global-border-radius: calc(var(--custom-rem) * 0.375);
     --round-border-radius: 9999px;
 
     /* Text */
