@@ -87,4 +87,29 @@ $(document).ready(function () {
             alert('ohhh my gotto')
         }
     });
+
+    // Cache elements for better performance
+    const gridIcon = $('.grid-icon');
+    const listIcon = $('.list-icon');
+    const blogList = $('.blog-list');
+
+    // Grid View Click Handler
+    gridIcon.click(function () {
+        // Remove active class from list icon and add to grid icon
+        listIcon.removeClass('view-system-active');
+        gridIcon.addClass('view-system-active');
+
+        // Switch blog list to grid view
+        blogList.removeClass('blog-container-list').addClass('blog-container-grid');
+    });
+
+    // List View Click Handler
+    listIcon.click(function () {
+        // Remove active class from grid icon and add to list icon
+        gridIcon.removeClass('view-system-active');
+        listIcon.addClass('view-system-active');
+
+        // Switch blog list to list view
+        blogList.removeClass('blog-container-grid').addClass('blog-container-list');
+    });
 });
