@@ -173,6 +173,21 @@ a.blog-topic {
     font-size: calc(var(--global-text) * 0.875);
 }
 
+/* Custom dropdown */
+.dropdown-btn span {
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdown-menu li a {
+    white-space: normal;
+}
+
 /* Home */
 
 /* Featured & All blogs */

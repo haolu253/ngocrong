@@ -152,4 +152,16 @@ $(document).ready(function () {
         // Switch blog list to list view
         blogList.removeClass('blog-container-grid').addClass('blog-container-list');
     });
+
+    // Custom dropdown
+    $('.dropdown-btn').on('click', function () {
+        $(this).parent('.custom-dropdown').toggleClass('dropdown-active');
+    });
+
+    // Close the dropdown if clicking outside of it
+    $(document).on('click', function (e) {
+        if (!$(e.target).closest('.custom-dropdown').length) {
+            $('.custom-dropdown').removeClass('dropdown-active');
+        }
+    });
 });

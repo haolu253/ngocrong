@@ -1,3 +1,9 @@
+/* PLP */
+.blog-category-page a.blog-topic {
+    display: none;
+}
+
+/* PDP */
 .blog-page-image {
     margin-bottom: var(--global-spacing);
 }

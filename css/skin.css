@@ -354,3 +354,29 @@ footer {
 .blog-publish span {
     color: var(--color-primary);
 }
+
+/* Custom dropdown */
+.dropdown-btn {
+    background-color: var(--color-light);
+    border: 1px solid var(--color-border);
+}
+
+.dropdown-btn:focus {
+    outline: unset;
+}
+
+.dropdown-menu {
+    background-color: var(--color-light);
+    border: 1px solid var(--color-border);
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus {
+    background-color: transparent;
+    background-image: unset;
+    color: var(--color-primary)
+}
+
+.dropdown-menu li a.dropdown-selected {
+    color: var(--color-primary);
+}
