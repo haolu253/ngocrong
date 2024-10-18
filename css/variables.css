@@ -29,6 +29,13 @@
     --color-text-light: #333333;
     --color-text-lighter: #666666;
 
+    /* Social color */
+    --color-facebook: #168AFF;
+    --color-messenger: #9F33FF;
+    --color-x: #000000;
+    --color-linkedin: #0077B5;
+    --color-mail: #EA4335;
+
     /* Breakpoints */
     --sm: 576px;
     --md: 768px;

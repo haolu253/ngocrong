@@ -1,13 +1,3 @@
-/* Hero section */
-.hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 46vh;
-    padding: var(--spacing-lg-1);
-}
-
 /* Content margin */
 .blog-topics,
 .featured-blog,

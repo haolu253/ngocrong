@@ -1,5 +1,5 @@
 * {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather Sans';
     line-height: 170%;
     font-size: var(--global-text);
 }
@@ -20,7 +20,7 @@ a {
 }
 
 .transition-gradient-text {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather Sans';
     font-weight: bold;
 }
 
@@ -34,6 +34,16 @@ a {
     font-size: calc(var(--global-text) * 3);
     line-height: 100%;
     margin-bottom: 0;
+}
+
+/* Hero section */
+.hero-section {
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: clamp(calc(var(--global-text) * 2.2), 5vw, calc(var(--global-text) * 3));
+    line-height: 1.4;
 }
 
 /* Input */
@@ -138,7 +148,7 @@ a.blog-topic {
 }
 
 .blog-item-content a:has(h4) {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather Sans';
     text-decoration: none;
     margin-bottom: var(--gap-xs);
 }
@@ -155,27 +165,15 @@ a.blog-topic {
 
 .blog-publish {
     font-size: calc(var(--global-text) * 0.875);
-    font-weight: 600;
     margin-bottom: 0;
 }
 
 .blog-publish span {
     font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
     font-size: calc(var(--global-text) * 0.875);
-    font-weight: 400;
 }
 
 /* Home */
-
-/* Hero section */
-.hero-section {
-    text-align: center;
-}
-
-.hero-section h1 {
-    font-size: clamp(calc(var(--global-text) * 2.2), 5vw, calc(var(--global-text) * 3));
-    line-height: 1.4;
-}
 
 /* Featured & All blogs */
 @media screen and (min-width: 992px) {
@@ -191,10 +189,28 @@ a.blog-topic {
     margin-bottom: var(--spacing-lg-3);
 }
 
+.blogs h3 {
+    margin-bottom: var(--spacing-lg-2);
+}
+
 @media screen and (max-width: 992px) {
     .featured-blog h2,
-    .blogs h2 {
+    .blogs h2,
+    .blogs h3 {
         font-weight: 600;
         margin-bottom: var(--spacing-lg-1);
     }
+}
+
+/* Blog page */
+.blog-page-content p {
+    font-size: calc(var(--global-text) * 1.125);
+    margin-bottom: var(--global-spacing);
+}
+
+.blog-page-image span {
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-size: calc(var(--global-text) * 0.875);
+    font-style: italic;
+    font-weight: 400;
 }
