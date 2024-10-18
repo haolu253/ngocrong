@@ -78,6 +78,74 @@ body {
 
 .light-bg {
     background-color: var(--color-light);
+    border: 1px solid var(--color-border);
+}
+
+/* Container */
+.custom-box {
+    border: 1px solid var(--color-border);
+}
+
+.custom-box.dark-bg * {
+    color: var(--color-light);
+}
+
+.custom-box.primary-content .box-icon svg path,
+.custom-box.secondary-content .box-icon svg path,
+.custom-box.tertiary-content .box-icon svg path,
+.custom-box.quaternary-content .box-icon svg path {
+    fill: var(--color-light);
+    stroke: var(--color-light);
+}
+
+.custom-box.primary-content .box-icon {
+    background-color: var(--color-primary);
+    border: unset;
+}
+
+.custom-box.primary-content h3 {
+    color: var(--color-primary);
+}
+
+.custom-box.secondary-content .box-icon {
+    background-color: var(--color-secondary);
+    border: unset;
+}
+
+.custom-box.secondary-content h3 {
+    color: var(--color-secondary);
+}
+
+.custom-box.tertiary-content .box-icon {
+    background-color: var(--color-tertiary);
+    border: unset;
+}
+
+.custom-box.tertiary-content h3 {
+    color: var(--color-tertiary);
+}
+
+.custom-box.quaternary-content .box-icon {
+    background-color: var(--color-quaternary);
+    border: unset;
+}
+
+.custom-box.quaternary-content h3 {
+    color: var(--color-quaternary);
+}
+
+.box-icon {
+    background-color: var(--color-light);
+    border: 1px solid var(--color-border)
+}
+
+/* Floating button */
+.radial-progress {
+    background: conic-gradient(var(--primary-color) 0%, var(--primary-color) 0%, var(--color-gray) 0%);
+}
+
+.go-top-button {
+    background-color: var(--color-light);
 }
 
 /* Button */
@@ -111,6 +179,20 @@ a.custom-btn.custom-btn-dark {
 a.custom-btn.custom-btn-dark:hover {
     background-color: var(--color-primary);
     border-color: var(--color-primary);
+}
+
+/* Pagination */
+.pagination {
+    border: 1px solid var(--color-border);
+}
+
+.paging {
+    border-left: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
+}
+
+.paging a.paging-active {
+    color: var(--color-primary);
 }
 
 /* Header */
@@ -201,6 +283,12 @@ footer {
     color: var(--color-primary);
 }
 
+/* Marquee */
+.marquee-container {
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
 /* Blog */
 .blogs-view-system svg path {
     fill: var(--color-text);
@@ -212,16 +300,16 @@ footer {
     stroke: var(--color-primary);
 }
 
-.blog-item .blog-item-content h4:hover {
-    color: var(--color-primary);
-}
-
-.blog-item .blog-item-content a:first-of-type {
+.blog-topic {
     border: 1px solid var(--color-border);
 }
 
-.blog-item .blog-item-content a:first-of-type:hover {
+.blog-topic:hover {
     border-color: var(--color-primary);
+}
+
+.blog-item .blog-item-content h4:hover {
+    color: var(--color-primary);
 }
 
 .blog-container-list .blog-item {

@@ -1,4 +1,44 @@
 $(document).ready(function () {
+    // Progress bar
+    const $progressContainer = $('.floating-button');
+    const $progressBar = $('.radial-progress');
+
+    // Function to update the radial progress
+    function updateRadialProgress() {
+        const scrollTop = $(window).scrollTop();
+        const windowHeight = $(window).height();
+        const documentHeight = $(document).height();
+
+        // Calculate scroll percentage
+        const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+
+        // Cap the percentage between 0% and 100%
+        const cappedPercent = Math.min(100, Math.max(0, scrollPercent));
+
+        // Update the radial progress using conic-gradient
+        $progressBar.css(
+            'background',
+            `conic-gradient(#00A76F ${cappedPercent}%, #e3e3e3 ${cappedPercent}%)`
+        );
+
+        // Show or hide the progress container based on scroll position
+        if (cappedPercent > 0) {
+            $progressContainer.css('opacity', 1); // Show
+        } else {
+            $progressContainer.css('opacity', 0); // Hide
+        }
+    }
+
+    // Update the progress on scroll
+    $(window).on('scroll', updateRadialProgress);
+
+    // Smooth scroll to top on button click
+    $('.go-top-button').on('click', function (e) {
+        e.preventDefault(); // Prevent any default behavior
+        $('html, body').scrollTop(0);
+    });
+
+    // Hamburger menu
     $('.hamburger').on('click', function (e) {
         e.preventDefault();
         updateHeaderDimensions();

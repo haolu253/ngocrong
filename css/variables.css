@@ -7,6 +7,12 @@
     /* Secondary color */
     --color-secondary: #FFAB00;
 
+     /* Tertiary color */
+    --color-tertiary: #E94D65;
+
+      /* Quaternary color */
+    --color-quaternary: #7B8B99;
+
     /* Contrast color */
     --color-light: #FFFFFF;
     --color-dark: #212B36;
