@@ -124,7 +124,7 @@
                 <div class="profile-card primary-light-bg container-soft-round d-flex flex-column justify-content-center align-items-center">
                     <div class="profile-img"><img src="./img/ava.jpg" alt=""></div>
                     <h3>Hoàng Nhựt Nam</h3>
-                    <a href="javascript:void(0)" class="custom-btn custom-btn-dark custom-btn-rounded">Theo dõi</a>
+                    <a href="javascript:void(0)" class="subscribe-btn custom-btn custom-btn-dark custom-btn-rounded">Theo dõi</a>
                 </div>
                 <ul>
                     <li><a href="javascript:void(0)"><img src="./img/contact.svg" alt="">Liên hệ</a></li>
@@ -247,16 +247,32 @@
         </div>
     </div>
 
+    <!-- Custom modal overlay -->
+    <div class="modal-overlay d-none"></div>
+
+    <!-- Custom subscription modal -->
+    <div class="modal-subscribe d-none">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Kết nối cảm xúc</h3>
+            <p>Mỗi dòng chữ là một hạt bụi thời gian. Đăng ký để những khoảnh khắc quý giá ấy đến bên bạn từng ngày.</p>
+            <div class="subscribe-form">
+                <input type="email" placeholder="Nhập email của bạn">
+            </div>
+            <a href="javascript:void(0)" class="submit-email-btn custom-btn custom-btn-dark custom-btn-rounded">Theo dõi</a>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="primary-light-bg">
         <div class="footer custom-container">
             <div class="footer-sub d-flex flex-column flex-lg-row">
                 <div class="footer-sub-text col-12 col-lg-6 p-0">
-                    <h3>Bạn chưa là thành viên ?</h3>
-                    <p>Theo dõi ngay để tận hưởng toàn bộ nội dung độc quyền dành riêng cho thành viên và nhận bài viết mới hàng tuần qua email.</p>
+                    <h3>Mỗi bài viết là một cánh thư gửi gắm yêu thương</h3>
+                    <p>Hãy theo dõi để cùng chúng tôi dệt nên giai điệu cuộc sống, và để trái tim bạn đón nhận những tản văn mới theo thời gian, gửi qua từng dòng email dịu dàng.</p>
                 </div>
                 <div class="footer-sub-action col-12 col-lg-6 mt-2 mt-lg-0 p-0 d-flex justify-content-start justify-content-lg-end align-items-center">
-                    <a href="javascript:void(0)" class="custom-btn custom-btn-dark custom-btn-rounded mr-3">Theo dõi</a>
+                    <a href="javascript:void(0)" class="subscribe-btn custom-btn custom-btn-dark custom-btn-rounded mr-3">Theo dõi</a>
                     <a href="javascript:void(0)" class="custom-btn custom-btn-rounded">Liên hệ</a>
                 </div>
             </div>

@@ -1,3 +1,17 @@
+/* Body */
+body::-webkit-scrollbar-track {
+    background-color: var(--color-gray);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-border);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-primary-dark);
+}
+
 /* Text */
 h1,
 h2,
@@ -379,4 +393,21 @@ footer {
 
 .dropdown-menu li a.dropdown-selected {
     color: var(--color-primary);
+}
+
+/* Custom subscribe modal */
+
+
+/* Email Input */
+.subscribe-form {
+    border: 1px solid var(--color-border);
+}
+
+/* Close Button */
+.close-btn {
+    opacity: .46;
+}
+
+.close-btn:hover {
+    opacity: 1;
 }

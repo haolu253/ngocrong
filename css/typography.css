@@ -188,6 +188,18 @@ a.blog-topic {
     white-space: normal;
 }
 
+/* Custom subscribe modal */
+
+/* Close Button */
+.close-btn {
+    font-size: calc(var(--global-text) * 1.5);
+}
+
+/* Modal Content */
+.modal-content {
+    text-align: center;
+}
+
 /* Home */
 
 /* Featured & All blogs */

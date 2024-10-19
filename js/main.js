@@ -164,4 +164,21 @@ $(document).ready(function () {
             $('.custom-dropdown').removeClass('dropdown-active');
         }
     });
+
+    // Open Modal on Subscribe Button Click
+    $('.subscribe-btn').on('click', function () {
+        // Close the side menu when opening the modal
+        $('.hamburger').removeClass('active-menu');
+        $('.side-menu').removeClass('side-menu-active');
+
+        // Show the modal and disable body scroll
+        $('.modal-overlay, .modal-subscribe').toggleClass('d-none');
+        $('body').addClass('no-scroll');
+    });
+
+    // Close Modal on Close Button Click or Overlay Click
+    $('.close-btn, .modal-overlay').on('click', function () {
+        $('.modal-overlay, .modal-subscribe').toggleClass('d-none');
+        $('body').removeClass('no-scroll');
+    });
 });
