@@ -48,3 +48,13 @@
     max-width: 100%;
     margin: var(--spacing-lg-1) 0 0;
 }
+
+.blogs .view-more-btn {
+    margin: var(--spacing-lg-3) auto 0;
+}
+
+@media screen and (max-width: 992px) {
+    .blogs .view-more-btn {
+        margin: var(--spacing-lg-2) auto 0;
+    }
+}
