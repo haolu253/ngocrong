@@ -1,11 +1,13 @@
 /* Container */
 .custom-container {
+    width: 100%;
     max-width: var(--global-max-width);
     margin: var(--spacing-auto);
     padding: var(--global-spacing) var(--spacing-lg-1);
 }
 
 .custom-container-fluid {
+    width: 100%;
     margin: var(--spacing-auto);
     padding: var(--global-spacing) 0;
 }
