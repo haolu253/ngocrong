@@ -372,10 +372,6 @@ header {
     position: relative;
 }
 
-.search-box form {
-    margin: 0;
-}
-
 .search-box input,
 .search-box input:focus {
     width: 100%;
