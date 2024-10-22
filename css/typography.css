@@ -241,3 +241,8 @@ a.blog-topic {
     font-style: italic;
     font-weight: 400;
 }
+
+/* Blog categories page */
+.blog-category-card {
+    text-align: center;
+}
