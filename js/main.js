@@ -181,4 +181,15 @@ $(document).ready(function () {
         $('.modal-overlay, .modal-subscribe').toggleClass('d-none');
         $('body').removeClass('no-scroll');
     });
+
+    // Popup message
+    function showPopup() {
+        const popup = document.querySelector('.popup-message');
+        popup.classList.add('show');
+
+        // Remove the 'show' class after animation completes (6s total).
+        setTimeout(() => {
+            popup.classList.remove('show');
+        }, 6000);  // 2s fade-in + 2s delay + 2s fade-out
+    }
 });
