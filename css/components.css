@@ -869,6 +869,21 @@ header {
     border: unset;
 }
 
+a.custom-btn.custom-btn-dark.submitted-email {
+    position: relative;
+    pointer-events: none;
+}
+
+a.custom-btn.custom-btn-dark.submitted-email::after {
+    content: '';
+    width: calc(var(--custom-rem) * 1.5);
+    height: calc(var(--custom-rem) * 1.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* Email Input */
 .subscribe-form {
     width: 100%;

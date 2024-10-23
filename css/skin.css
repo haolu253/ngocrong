@@ -408,6 +408,17 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+a.custom-btn.custom-btn-dark.submitted-email {
+    color: transparent;
+    opacity: .5;
+}
+
+a.custom-btn.custom-btn-dark.submitted-email::after {
+    background-image: url(../img/loading-gif.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 /* Email Input */
 .subscribe-form {
     border: 1px solid var(--color-border);

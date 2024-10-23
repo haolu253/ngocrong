@@ -190,13 +190,16 @@
     <!-- Custom subscription modal -->
     <div class="modal-subscribe d-none">
         <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h3>Kết nối cảm xúc</h3>
-            <p>Mỗi dòng chữ là một hạt bụi thời gian. Đăng ký để những khoảnh khắc quý giá ấy đến bên bạn từng ngày.</p>
-            <div class="subscribe-form">
-                <input type="email" placeholder="Nhập email của bạn">
-            </div>
-            <a href="javascript:void(0)" class="submit-email-btn custom-btn custom-btn-dark custom-btn-rounded">Theo dõi</a>
+            <form method="post" action="/umbraco/api/subscriptionapi/submit">
+                <span class="close-btn">&times;</span>
+                <h3>Kết nối cảm xúc</h3>
+                <p>Mỗi dòng chữ là một hạt bụi thời gian. Đăng ký để những khoảnh khắc quý giá ấy đến bên bạn từng ngày.</p>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Nhập email của bạn">
+                </div>
+                <!-- .submitted-email for disbabled button -->
+                <a href="javascript:void(0)" class="submit-email-btn submitted-email custom-btn custom-btn-dark custom-btn-rounded">Theo dõi</a>
+            </form>
         </div>
     </div>
 
