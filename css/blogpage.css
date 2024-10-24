@@ -8,6 +8,27 @@
     margin-bottom: var(--global-spacing);
 }
 
+.blog-page-image img {
+    border-radius: var(--global-border-radius);
+}
+
+@media screen and (max-width: 992px) {
+    .blog-page-image {
+        width: 100vw;
+        margin-left: calc(var(--spacing-lg-1) * -1);
+        margin-right: calc(var(--spacing-lg-1) * -1);
+    }
+
+    .blog-page-image img {
+        border-radius: unset;
+    }
+
+    .blog-page-image span {
+        padding-left: var(--spacing-lg-1);
+        padding-right: var(--spacing-lg-1);
+    }
+}
+
 /* Blog categories page */
 .blog-categories {
     display: grid;

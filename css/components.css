@@ -109,11 +109,11 @@
 }
 
 .hero-section img {
-    width: 100%;
+    max-width: 100%;
     max-height: calc(var(--custom-rem) * 30);
     border-radius: var(--global-border-radius);
     margin-top: var(--spacing-lg-1);
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .hero-section .social-link {
