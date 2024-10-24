@@ -839,6 +839,71 @@ header {
     padding: var(--gap-sm) var(--global-gap);
 }
 
+/* Popup message */
+.popup-message {
+    width: fit-content;
+    max-width: calc(var(--custom-rem) * 30);
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.4); /* Start with smaller scale */
+    z-index: 200;
+    border-radius: var(--global-border-radius);
+    opacity: 0; /* Start hidden */
+    visibility: hidden; /* Prevent interaction when hidden */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+@media screen and (max-width: 992px) {
+    .popup-message {
+        width: calc(var(--custom-rem) * 20);
+    }
+}
+
+.popup-message.show {
+    transform: translateX(-50%) scale(0.8); /* Zoom in animation */
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-message-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: var(--global-spacing);
+}
+
+.popup-message-icon {
+    min-width: fit-content;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    margin-right: var(--global-spacing);
+    padding: var(--spacing-sm-2);
+    border-radius: var(--global-border-radius);
+}
+
+.popup-message-icon-round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: var(--spacing-sm-1);
+    border-radius: var(--round-border-radius);
+}
+
+.popup-message-icon img {
+    width: var(--custom-rem);
+    height: var(--custom-rem);
+}
+
+.popup-progress-bar {
+    width: 100%;
+    height: 4.6px;
+    border-radius: var(--global-border-radius);
+    transition: width var(--popup-progress) linear;
+}
+
 /* Custom subscribe modal */
 
 /* Modal Overlay */

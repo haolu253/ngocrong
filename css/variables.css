@@ -80,4 +80,19 @@
     /* Header */
     --header-height: calc(var(--custom-rem) * 4);
     --header-logo-width: calc(var(--custom-rem) * 10);
+
+    /* Popup message */
+    --popup-progress: 4s;
+
+    --popup-color-default: #42C0F2;
+    --popup-color-default-light: #CFEFFC;
+
+    --popup-color-warning: #F29208;
+    --popup-color-warning-light: #FFEEDF;
+
+    --popup-color-error: #E63435;
+    --popup-color-error-light: #FFEAEC;
+
+    --popup-color-success: #2DD743;
+    --popup-color-success-light: #E3FEE6;
 }

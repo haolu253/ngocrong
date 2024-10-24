@@ -182,14 +182,33 @@ $(document).ready(function () {
         $('body').removeClass('no-scroll');
     });
 
-    // Popup message
     function showPopup() {
-        const popup = document.querySelector('.popup-message');
-        popup.classList.add('show');
+        const $popup = $('.popup-message');
+        const $progressBar = $popup.find('.popup-progress-bar');
 
-        // Remove the 'show' class after animation completes (6s total).
+        // Get the duration from the data attribute or use 4000ms as default
+        const duration = parseInt($popup.data('duration')) || 4000;
+
+        // Set the CSS variable for the progress bar duration
+        $(':root').css('--popup-progress', (duration / 1000) + 's');
+
+        // Reset the progress bar to 100% initially (before animation starts)
+        $progressBar.css('width', '100%');
+
+        // Show the popup with fade-in effect
+        $popup.addClass('show');
+
+        // Start reducing the progress bar width after a slight delay
         setTimeout(() => {
-            popup.classList.remove('show');
-        }, 6000);  // 2s fade-in + 2s delay + 2s fade-out
+            $progressBar.css('width', '0%');
+        }, 10);
+
+        // Hide the popup after the specified duration
+        setTimeout(() => {
+            $popup.removeClass('show'); // Triggers fade-out
+        }, duration);
     }
+
+    // Trigger the popup when needed like: show gift, etc,....
+    showPopup();
 });

@@ -397,6 +397,68 @@ footer {
     color: var(--color-primary);
 }
 
+/* Popup message */
+.popup-message {
+    background-color: var(--color-light);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.popup-message-icon {
+    background-color: var(--popup-color-default-light);
+}
+
+.popup-message-icon-round {
+    background-color: var(--popup-color-default);
+}
+
+.popup-progress-bar {
+    background-color: var(--popup-color-default);
+    border-top: 2px solid var(--popup-color-default-light);
+}
+
+/* Warning */
+/* Error */
+.warning-message .popup-message-icon {
+    background-color: var(--popup-color-warning-light);
+}
+
+.warning-message .popup-message-icon-round {
+    background-color: var(--popup-color-warning);
+}
+
+.warning-message .popup-progress-bar {
+    background-color: var(--popup-color-warning);
+    border-top: 2px solid var(--popup-color-warning-light);
+}
+
+/* Error */
+.error-message .popup-message-icon {
+    background-color: var(--popup-color-error-light);
+}
+
+.error-message .popup-message-icon-round {
+    background-color: var(--popup-color-error);
+}
+
+.error-message .popup-progress-bar {
+    background-color: var(--popup-color-error);
+    border-top: 2px solid var(--popup-color-error-light);
+}
+
+/* Success */
+.success-message .popup-message-icon {
+    background-color: var(--popup-color-success-light);
+}
+
+.success-message .popup-message-icon-round {
+    background-color: var(--popup-color-success);
+}
+
+.success-message .popup-progress-bar {
+    background-color: var(--popup-color-success);
+    border-top: 2px solid var(--popup-color-success-light);
+}
+
 /* Custom subscribe modal */
 .modal-overlay {
     background-color: var(--color-dark);

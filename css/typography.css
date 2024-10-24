@@ -195,6 +195,13 @@ a.blog-topic {
     font-size: calc(var(--global-text) * 1.5);
 }
 
+/* Popup message */
+.popup-message-content p {
+    font-weight: bold;
+    line-height: 140%;
+    margin: 0;
+}
+
 /* Modal Content */
 .modal-content {
     text-align: center;
