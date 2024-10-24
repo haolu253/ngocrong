@@ -861,7 +861,7 @@ header {
 }
 
 .popup-message.show {
-    transform: translateX(-50%) scale(0.8); /* Zoom in animation */
+    transform: translateX(-50%) scale(1); /* Zoom in animation */
     opacity: 1;
     visibility: visible;
 }
