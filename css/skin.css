@@ -510,9 +510,22 @@ a.custom-btn.custom-btn-dark.submitted-email::after {
     border: 1px solid var(--color-border);
 }
 
-.hero-about .social-link a {
+.about-me .social-link a {
     background-color: var(--color-primary-light);
     border-color: var(--color-primary);
+}
+
+.about-timeline-event {
+    border: 1px solid var(--color-border);
+}
+
+.about-timeline-event p:not(:first-child) {
+    border-top: 1px solid var(--color-border);
+}
+
+.about-timeline-event span {
+    background-color: var(--color-primary);
+    color: var(--color-light);
 }
 
 .about-topics {
