@@ -208,6 +208,23 @@ body {
     background-color: var(--color-light);
 }
 
+/* Floating contact button */
+.floating-contact-button {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Popup Styles */
+.contact-popup {
+    background-color: var(--color-light);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content-form {
+    border: 1px solid var(--color-border);
+}
+
 /* Button */
 a.custom-btn {
     color: var(--color-text);

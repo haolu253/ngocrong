@@ -44,6 +44,7 @@ $(document).ready(function () {
         updateHeaderDimensions();
         $(this).toggleClass('active-menu');
         $('.side-menu').toggleClass('side-menu-active');
+        $('#contactPopup').addClass('d-none');
     });
 
     $(document).on('click', function (e) {
@@ -170,6 +171,7 @@ $(document).ready(function () {
         // Close the side menu when opening the modal
         $('.hamburger').removeClass('active-menu');
         $('.side-menu').removeClass('side-menu-active');
+        $('#contactPopup').addClass('d-none');
 
         // Show the modal and disable body scroll
         $('.modal-overlay, .modal-subscribe').toggleClass('d-none');
@@ -177,7 +179,7 @@ $(document).ready(function () {
     });
 
     // Close Modal on Close Button Click or Overlay Click
-    $('.close-btn, .modal-overlay').on('click', function () {
+    $('#closePopupSubscribe, .modal-overlay').on('click', function () {
         $('.modal-overlay, .modal-subscribe').toggleClass('d-none');
         $('body').removeClass('no-scroll');
     });
@@ -211,4 +213,9 @@ $(document).ready(function () {
 
     // Trigger the popup when needed like: show gift, etc,....
     showPopup();
+
+    // Contact
+    $('#closePopupContact, #contactBtn').on('click', function () {
+        $('#contactPopup').toggleClass('d-none');
+    });
 });

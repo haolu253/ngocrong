@@ -245,6 +245,114 @@
     height: calc(var(--custom-rem) * 1.8);
 }
 
+/* Floating contact button */
+.floating-contact-button {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-sm-2);
+    border-radius: calc(var(--global-border-radius) * 8) 0 0 calc(var(--global-border-radius) * 8);
+    position: fixed;
+    bottom: 15%;
+    right: 0;
+    z-index: 197;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/* Initially hide the text */
+.floating-contact-button span {
+    max-width: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-width 0.3s ease, opacity 0.3s ease;
+}
+
+/* Icon styling */
+.floating-contact-button img {
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    margin: var(--spacing-sm-1) var(--global-spacing) 0 0;
+}
+
+/* On hover, expand the text */
+.floating-contact-button:hover {
+    padding-right: var(--spacing-lg-1); /* More space for text */
+}
+
+.floating-contact-button:hover span {
+    max-width: 100px; /* Adjust width as needed */
+    opacity: 1;
+}
+
+/* Contact Popup Styles */
+.contact-popup {
+    width: 90%;
+    max-width: calc(var(--custom-rem) * 20);
+    padding: var(--spacing-lg-1);
+    border-radius: var(--global-border-radius);
+    position: fixed;
+    bottom: calc(20% + 30px);
+    right: var(--spacing-lg-2);
+    z-index: 197;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Popup Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        bottom: 24%;
+    }
+    to {
+        opacity: 1;
+        bottom: calc(20% + 30px);
+    }
+}
+
+.popup-content h3 {
+    margin-top: 0;
+}
+
+.popup-content-form {
+    width: 100%;
+    margin-bottom: var(--global-spacing);
+    padding: var(--spacing-sm-1) var(--global-spacing);
+    border-radius: var(--global-border-radius);
+}
+
+.popup-content input,
+.popup-content input:focus,
+.popup-content input:focus:invalid:focus,
+.popup-content input:hover,
+.popup-content textarea,
+.popup-content textarea:focus,
+.popup-content textarea:focus:invalid:focus,
+.popup-content textarea:hover {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: unset;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    resize: none;
+}
+
+.contact-popup .close-btn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.contact-btn {
+    margin: var(--spacing-auto);
+}
+
 /* Button */
 .custom-btn {
     display: block;
