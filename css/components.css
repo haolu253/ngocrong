@@ -579,6 +579,10 @@ header {
     border-radius: var(--round-border-radius);
 }
 
+.profile-card .custom-btn {
+    margin-bottom: var(--global-gap);
+}
+
 /* Footer */
 .footer-sub {
     padding: var(--spacing-lg-1) 0 var(--spacing-lg-3);
