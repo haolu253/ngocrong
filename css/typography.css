@@ -253,3 +253,30 @@ a.blog-topic {
 .blog-category-card {
     text-align: center;
 }
+
+/* About me */
+.about-me h1 {
+    text-align: center;
+    margin: 0 0 var(--spacing-lg-1);
+}
+
+@media screen and (max-width: 992px) {
+    .about-me h2 {
+        font-size: calc(var(--global-text) * 1.625);
+    }
+}
+
+.about-me p {
+    font-size: calc(var(--global-text) * 1.125);
+}
+
+.about-topic-image span {
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-size: calc(var(--global-text)* 0.875);
+    font-style: italic;
+    font-weight: 400;
+}
+
+.about-topic-detail p {
+    margin-bottom: var(--global-spacing);
+}

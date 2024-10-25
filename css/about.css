@@ -1,18 +1,3 @@
-.about-me h1 {
-    text-align: center;
-    margin: 0 0 var(--spacing-lg-1);
-}
-
-@media screen and (max-width: 992px) {
-    .about-me h2 {
-        font-size: calc(var(--global-text) * 1.625);
-    }
-}
-
-.about-me p {
-    font-size: calc(var(--global-text) * 1.125);
-}
-
 .hero-about,
 .about-topics-intro {
     margin-bottom: var(--spacing-lg-2);
@@ -67,8 +52,6 @@
     height: calc(var(--custom-rem) * 20);
     padding-top: var(--spacing-lg-2);
     overflow: hidden;
-    background-color: var(--color-primary-light);
-    border: 1px solid var(--color-border);
     border-radius: calc(var(--global-border-radius) * 10) calc(var(--global-border-radius) * 10) 0 0;
 }
 
@@ -107,11 +90,6 @@
     }
 }
 
-.hero-about .social-link a {
-    background-color: var(--color-primary-light);
-    border-color: var(--color-primary);
-}
-
 /* Topics */
 @media screen and (max-width: 992px) {
     .about-topics-intro {
@@ -128,7 +106,6 @@
     grid-auto-columns: 1fr;
     padding: var(--gap-lg);
     border-radius: var(--global-border-radius);
-    background-color: var(--color-primary-light);
 }
 
 @media screen and (max-width: 992px) {
@@ -139,10 +116,6 @@
         margin-right: calc(var(--spacing-lg-1) * -1);
         border-radius: unset;
     }
-}
-
-.about-topic h2 {
-    color: var(--color-primary);
 }
 
 /* Detail */
@@ -176,10 +149,6 @@
 
 .about-topic-image span {
     display: block;
-    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
-    font-size: calc(var(--global-text)* 0.875);
-    font-style: italic;
-    font-weight: 400;
 }
 
 @media screen and (max-width: 992px) {
@@ -187,8 +156,4 @@
         padding-left: var(--spacing-lg-1);
         padding-right: var(--spacing-lg-1);
     }
-}
-
-.about-topic-detail p {
-    margin-bottom: var(--global-spacing);
 }
