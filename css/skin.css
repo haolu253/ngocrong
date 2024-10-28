@@ -336,6 +336,10 @@ a.custom-btn.custom-btn-dark:hover {
     border-top: 1px solid var(--color-border);
 }
 
+.profile-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Footer */
 footer {
     background-color: var(--color-light);
@@ -551,4 +555,34 @@ a.custom-btn.custom-btn-dark.submitted-email::after {
 
 .about-topic h2 {
     color: var(--color-primary);
+}
+
+/* Store page */
+.buy-now-icon {
+    background-color: var(--color-primary);
+}
+
+.buy-now-icon:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-tag {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+
+.product-tag.exclusive-tag {
+    background-color: var(--color-exclusive);
+}
+
+.product-tag.hot-tag {
+    background-color: var(--color-hot);
+}
+
+.product-tag.sale-tag {
+    background-color: var(--color-sale);
+}
+
+.product-sale-price {
+    color: var(--color-sale-price);
 }

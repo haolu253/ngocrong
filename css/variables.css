@@ -29,6 +29,9 @@
     --color-text-light: #333333;
     --color-text-lighter: #666666;
 
+    /* Price color */
+    --color-sale-price: #919EAB;
+
     /* Social color */
     --color-facebook: #168AFF;
     --color-messenger: #9F33FF;
@@ -95,4 +98,9 @@
 
     --popup-color-success: #2DD743;
     --popup-color-success-light: #E3FEE6;
+
+    /* Product tag */
+    --color-exclusive: #71C5D1;
+    --color-hot: #A12A64;
+    --color-sale: #FD990F;
 }

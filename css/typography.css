@@ -295,3 +295,26 @@ a.blog-topic {
 .about-topic-detail p {
     margin-bottom: var(--global-spacing);
 }
+
+/* Store page */
+.storepage-top {
+    text-align: center;
+}
+
+.product-tag {
+    font-size: calc(var(--global-text) * 0.75);
+}
+
+.product-item-bot a {
+    font-size: calc(var(--global-text) * 0.875);
+    font-weight: bold;
+}
+
+.product-sale-price {
+    font-size: calc(var(--global-text) * 0.875);
+    text-decoration: line-through;
+}
+
+.product-price {
+    font-weight: bold;
+}
