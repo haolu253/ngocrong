@@ -62,9 +62,7 @@
     border-radius: unset;
 }
 
-.product-tag {
-    padding: var(--spacing-sm-1) var(--spacing-sm-2);
-    border-radius: var(--global-border-radius);
+.product-item .product-tag {
     position: absolute;
     top: var(--global-spacing);
     right: var(--global-spacing);

@@ -218,4 +218,61 @@ $(document).ready(function () {
     $('#closePopupContact, #contactBtn').on('click', function () {
         $('#contactPopup').toggleClass('d-none');
     });
+
+    // Slick
+    var $productImages = $('.product-images');
+    var $productImagesNav = $('.product-images-nav');
+    var imageCount = $productImages.find('img').length;
+
+    // Initialize the main carousel
+    $productImages.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        asNavFor: '.product-images-nav',
+        prevArrow: '.slick-prev-custom',
+        nextArrow: '.slick-next-custom',
+    });
+
+    // Initialize the thumbnail carousel
+    $productImagesNav.slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.product-images',
+        dots: false,
+        centerMode: imageCount >= 3,
+        focusOnSelect: true,
+        variableWidth: true,
+        infinite: imageCount >= 3,
+        arrows: false,
+    });
+
+    // Update slide counter on slide change
+    $productImages.on('init afterChange', function(event, slick, currentSlide) {
+        var slideIndex = (currentSlide !== undefined ? currentSlide : 0) + 1;
+        $('.slide-counter').text(slideIndex + ' / ' + slick.slideCount);
+    });
+
+    // Trigger the initial slide counter update
+    $productImages.slick('setPosition');
+
+    // Rating result
+     // Select the star ratings container
+    const $starRatings = $('.star-ratings');
+
+    // Get the rating value from the data attribute
+    const ratingValue = $starRatings.data('rating-result');
+
+    // Select the fill ratings element
+    const $fillRatings = $starRatings.find('.fill-ratings');
+
+    // Set the width of fill ratings based on the rating value
+    $fillRatings.css('width', ratingValue + '%'); // Set width based on data attribute
+
+    // Get the width of the span inside fill ratings
+    var star_rating_width = $fillRatings.find('span').width();
+
+    // Set the width of the star ratings container based on the star width
+    $starRatings.width(star_rating_width);
 });

@@ -17,12 +17,15 @@
     --color-light: #FFFFFF;
     --color-dark: #212B36;
     --color-gray: #EEEEEF;
+    --color-gray-dark: #D3D3D3;
+    --color-gray-darker: #637381;
 
     /* Sub color */
     --color-border: #E8E8E8;
     --color-border-2: #212B3633;
     --color-shadow: #DCDCDC;
     --color-red: #FF0000;
+    --color-breadcrumbs: #C3D0E0;
 
     /* Text color */
     --color-text: #1A1A1A;

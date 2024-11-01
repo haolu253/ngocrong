@@ -358,6 +358,7 @@
     display: block;
     width: fit-content;
     padding: var(--spacing-sm-2) var(--spacing-lg-1);
+    border-radius: var(--global-border-radius);
 }
 
 .custom-btn-rounded {
@@ -393,6 +394,11 @@
     display: flex;
     gap: var(--global-gap);
     padding: 0 var(--global-spacing);
+}
+
+.product-tag {
+    padding: var(--spacing-sm-1) var(--global-spacing);
+    border-radius: var(--global-border-radius);
 }
 
 /* Header */
