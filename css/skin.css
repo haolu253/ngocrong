@@ -633,3 +633,20 @@ a.custom-btn.custom-btn-dark.submitted-email::after {
     fill: var(--color-primary);
     stroke: var(--color-primary)
 }
+
+/* Description */
+.product-description-bottom {
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+}
+
+.product-description-bottom h5 {
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.product-description-bottom table tr td:first-child p {
+    color: var(--color-gray-darker);
+}
+
+.product-description-bottom table td {
+    border: 1px solid var(--color-border);
+}
