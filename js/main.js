@@ -275,4 +275,12 @@ $(document).ready(function () {
 
     // Set the width of the star ratings container based on the star width
     $starRatings.width(star_rating_width);
+
+    $('input[name="payment"]').change(function() {
+        // Remove 'choosed-payment' class from all payment boxes
+        $('.payment-box').removeClass('choosed-payment');
+
+        // Add 'choosed-payment' class to the selected payment box
+        $(this).closest('.payment-box').addClass('choosed-payment');
+    });
 });

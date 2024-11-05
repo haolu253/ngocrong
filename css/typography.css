@@ -364,32 +364,104 @@ a.blog-topic {
 }
 
 /* Description */
-.product-description-bottom h4 {
+.product-detail-bottom h4 {
     margin-top: var(--spacing-lg-1);
 }
 
-.product-description-bottom h5 {
+.product-detail-bottom h5 {
     width: fit-content;
     margin-bottom: var(--spacing-lg-2);
     padding-bottom: 5px;
 }
 
-.product-description-bottom p,
-.product-description-bottom b,
+.product-detail-bottom p,
+.product-detail-bottom b,
 ul.product-description-step li {
     font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
     font-size: calc(var(--global-text) * 1);
     list-style-type: decimal;
 }
 
-.product-description-bottom ul li p {
+.product-detail-bottom ul li p {
     margin-bottom: var(--spacing-sm-1);
 }
 
-.product-description-bottom table tr td:first-child p {
+.product-detail-bottom table tr td:first-child p {
     font-weight: bold;
 }
 
-.product-description-bottom table td p {
+.product-detail-bottom table td p {
     margin: 0;
+}
+
+/* Checkout top */
+.checkout-top a {
+    font-size: calc(var(--global-text) * 0.875);
+    text-decoration: none;
+    margin-bottom: var(--global-spacing);
+}
+
+.checkout-top h3 {
+    margin-bottom: 0;
+}
+
+/* Information */
+.checkout-contact-form h5 {
+    margin-top: var(--global-spacing);
+    margin-bottom: var(--spacing-sm-1);
+}
+
+/* Payment */
+.payment-box h5 {
+    font-size: var(--global-text);
+    margin-bottom: 0;
+}
+
+.payment-box p,
+.payment-box b {
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-size: calc(var(--global-text) * 0.875);
+    margin-bottom: 0;
+}
+
+/* Product summary */
+.products-summary .product-item .product-tag {
+    font-size: calc(var(--global-text) * 0.625);
+}
+
+.products-summary .product-item h5,
+.products-summary .product-item p {
+    margin-bottom: 0;
+}
+
+.products-summary .product-item table td:last-child {
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Order summary */
+.order-summary h4 {
+    margin-bottom: var(--global-spacing);
+}
+
+.order-summary table p {
+    margin-bottom: var(--global-spacing);
+}
+
+.order-summary table tr td:last-child {
+    text-align: right;
+}
+
+.order-summary table tr:not(:last-child) p {
+    font-size: calc(var(--global-text) * 0.875);
+}
+
+.order-summary table tr:last-child p {
+    font-weight: bold;
+    margin-top: var(--global-spacing);
+    margin-bottom: 0;
+}
+
+.order-summary table tr td:last-child p {
+    font-weight: bold;
 }
