@@ -696,3 +696,13 @@ a.custom-btn.custom-btn-dark.submitted-email::after {
 .order-summary table tr:last-child td:last-child p {
     color: var(--color-primary);
 }
+
+/* Thank you page */
+.thank-you-circle {
+    background-color: var(--color-primary);
+}
+
+.thank-you-checkmark {
+    border-right: 3px solid var(--color-light);
+    border-bottom: 3px solid var(--color-light);
+}

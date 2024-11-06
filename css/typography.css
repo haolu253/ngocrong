@@ -465,3 +465,14 @@ ul.product-description-step li {
 .order-summary table tr td:last-child p {
     font-weight: bold;
 }
+
+/* Thank you page */
+.thank-you-container h3,
+.thank-you-container p {
+    text-align: center;
+    margin: 0;
+}
+
+.thank-you-container p b {
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
