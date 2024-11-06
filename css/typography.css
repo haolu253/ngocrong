@@ -1,10 +1,11 @@
 * {
-    font-family: 'Merriweather Sans';
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
     line-height: 170%;
     font-size: var(--global-text);
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald';
     line-height: 150%;
     margin-top: 0;
     padding-bottom: var(--gap-xs);

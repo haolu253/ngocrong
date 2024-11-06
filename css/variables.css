@@ -1,21 +1,12 @@
 :root {
     /* Primary color */
-    --color-primary: #00A76F;
+    --color-primary: #ffb200;
     --color-primary-light: #F0FDF4;
     --color-primary-dark: #003E2D;
 
-    /* Secondary color */
-    --color-secondary: #FFAB00;
-
-     /* Tertiary color */
-    --color-tertiary: #E94D65;
-
-      /* Quaternary color */
-    --color-quaternary: #7B8B99;
-
     /* Contrast color */
     --color-light: #FFFFFF;
-    --color-dark: #212B36;
+    --color-dark: #000000;
     --color-gray: #EEEEEF;
     --color-gray-dark: #D3D3D3;
     --color-gray-darker: #637381;
@@ -31,16 +22,6 @@
     --color-text: #1A1A1A;
     --color-text-light: #333333;
     --color-text-lighter: #666666;
-
-    /* Price color */
-    --color-sale-price: #919EAB;
-
-    /* Social color */
-    --color-facebook: #168AFF;
-    --color-messenger: #9F33FF;
-    --color-x: #000000;
-    --color-linkedin: #0077B5;
-    --color-mail: #EA4335;
 
     /* Breakpoints */
     --sm: 576px;
@@ -82,28 +63,4 @@
 
     /* Text */
     --global-text: var(--custom-rem);
-
-    /* Header */
-    --header-height: calc(var(--custom-rem) * 4);
-    --header-logo-width: calc(var(--custom-rem) * 10);
-
-    /* Popup message */
-    --popup-progress: 4s;
-
-    --popup-color-default: #42C0F2;
-    --popup-color-default-light: #CFEFFC;
-
-    --popup-color-warning: #F29208;
-    --popup-color-warning-light: #FFEEDF;
-
-    --popup-color-error: #E63435;
-    --popup-color-error-light: #FFEAEC;
-
-    --popup-color-success: #2DD743;
-    --popup-color-success-light: #E3FEE6;
-
-    /* Product tag */
-    --color-exclusive: #71C5D1;
-    --color-hot: #A12A64;
-    --color-sale: #FD990F;
 }

@@ -9,3 +9,7 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+
+.web-content {
+    min-height: 100dvh;
+}
