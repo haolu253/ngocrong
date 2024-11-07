@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="icon" href="">
     <title>Ngọc Rồng PK</title>
     <link rel="stylesheet" type="text/css" href="vendor/css/bootstrap.min.css">
@@ -20,18 +19,65 @@
     <!-- Header -->
     <header class="header">
         <div class="header-top">
-            <img class="logo" src="./img/logo.png" alt="">
-            <div class="header-account-btn">
-                <a href="javascript:void(0)" class="custom-btn">Đăng ký</a>
-                <a href="javascript:void(0)" class="custom-btn custom-btn-primary">Đăng nhập</a>
+            <div class="header-account-btn-left d-none d-lg-flex">
+                <div class="loggedin-profile-card">
+                    <img src="./img/avatar.png" alt="">
+                    <div class="loggedin-profile-card-content">
+                        <div class="d-flex">
+                            <h4>moonbix</h4>
+                            <span>(1 sao)</span>
+                        </div>
+                        <p>Số dư: 100.000đ</p>
+                    </div>
+                </div>
+            </div>
+            <img class="logo" src="./img/logo_title.png" alt="">
+            <div class="header-account-btn-right d-none d-lg-flex">
+                <!-- Logged in -->
+                <a href="javascript:void(0)" class="account-manage-btn custom-btn custom-btn-primary">Quản lý tài khoản</a>
+                <!-- Logged in -->
+
+                <!-- Hide this when logged in -->
+                <a href="javascript:void(0)" class="custom-btn d-none">Đăng ký</a>
+                <a href="javascript:void(0)" class="custom-btn custom-btn-primary d-none">Đăng nhập</a>
+                <!-- Hide this when logged in -->
+            </div>
+            <div class="hamburger-wrapper d-block d-lg-none">
+                <div class="hamburger"><span></span></div>
             </div>
         </div>
-        <div class="header-bottom dark-bg">
+        <div class="header-bottom dark-bg d-none d-lg-block">
             <div class="header-menu custom-container">
                 <a href="javascript:void(0)" class="menu-active" id="menu-home">TRANG CHỦ</a>
                 <a href="javascript:void(0)" id="menu-community">Cộng đồng Zalo</a>
                 <a href="javascript:void(0)" id="menu-forum">Diễn đàn</a>
                 <a href="javascript:void(0)" id="menu-ranking">Bảng xếp hạng</a>
+            </div>
+        </div>
+        <div class="side-menu d-flex flex-column justify-content-between">
+            <div class="header-menu">
+                <div class="side-menu-top">
+                    <a href="javascript:void(0)" class="menu-active" id="menu-home">TRANG CHỦ</a>
+                    <a href="javascript:void(0)" id="menu-community">Cộng đồng Zalo</a>
+                    <a href="javascript:void(0)" id="menu-forum">Diễn đàn</a>
+                    <a href="javascript:void(0)" id="menu-ranking">Bảng xếp hạng</a>
+                </div>
+                <div class="side-menu-bottom">
+                    <!-- Logged in side bottom -->
+                    <div class="loggedin-profile-card">
+                        <img src="./img/avatar.png" alt="">
+                        <h4>moonbix</h4>
+                        <span>(1 sao)</span>
+                        <p>Số dư: 100.000đ</p>
+                        <a href="javascript:void(0)" class="account-manage-btn custom-btn custom-btn-primary">Quản lý tài khoản</a>
+                    </div>
+                    <!-- Logged in side bottom -->
+
+                    <!-- Hide this when logged in -->
+                    <a href="javascript:void(0)" class="d-none">Đăng ký</a>
+                    <a href="javascript:void(0)" class="d-none">Đăng nhập</a>
+                    <!-- Hide this when logged in -->
+                </div>
             </div>
         </div>
     </header>
@@ -40,7 +86,7 @@
     <div class="web-content image-bg">
 
         <!-- Hero section -->
-        <div class="hero-section primary-bg">
+        <div class="hero-section primary-bg d-none">
             <div class="hero-section-container custom-container">
                 <div class="hero-left">
                     <h1>Ngọc Rồng PK</h1>
@@ -65,7 +111,7 @@
                 </div>
             </div>
         </div>
-        <div class="hero-section-bottom primary-bg"></div>
+        <div class="hero-section-bottom primary-bg d-none"></div>
         <!-- Hero section -->
 
         <!-- Advantage -->
@@ -97,17 +143,17 @@
             </div>
             <img src="./img/goku-2.png" alt="">
         </div>
+        <!-- Summary -->
 
-
-
-        <div class="advantage">
-            <div class="advantage-container custom-container">
-                <h2>Nổi bật</h2>
-                <div class="advantage-content light-bg">
-                    
-                </div>
+        <!-- Introduction -->
+        <div class="introduction gray-bg">
+            <div class="introduction-container custom-container">
+                <h2>Giới thiệu chung</h2>
+                <p>Ngọc Rồng PK là trò chơi trực tuyến hấp dẫn, lấy cảm hứng từ bộ truyện tranh huyền thoại 7 Viên Ngọc Rồng. Người chơi sẽ nhập vai thành những anh hùng từ ba hành tinh: Trái Đất, Xayda và Namếc. Mỗi hành tinh sẽ có ngoại hình và chiêu thức riêng biệt nổi bật. Bạn sẽ luyện tập, rèn luyện sức mạnh và kỹ năng, đoàn kết chiến đấu chống lại các thế lực hung ác, và tham gia vào các cuộc tranh tài kịch tính.</p>
+                <p>Ngọc Rồng PK, game nhập vai Dragon Ball, ngọc rồng online, ngọc rồng chiến binh siêu hạng, game PC Windows, game iPhone, game Android, game Java, đồ họa mượt mà, game đa nền tảng.</p>
             </div>
         </div>
+        <!-- Introduction -->
 
     </div>
 
