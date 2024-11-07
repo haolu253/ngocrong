@@ -88,10 +88,10 @@ a.custom-btn.custom-btn-primary:hover {
 
 .go-top-btn {
     text-shadow:
-        1px 1px 2px white,
-        -1px -1px 2px white,
-        1px -1px 2px white,
-        -1px 1px 2px white;
+        1px 1px 2px var(--color-light),
+        -1px -1px 2px var(--color-light),
+        1px -1px 2px var(--color-light),
+        -1px 1px 2px var(--color-light);
     animation: pendulum ease-in-out 2s infinite alternate;
     cursor: pointer;
 }
