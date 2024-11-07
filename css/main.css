@@ -5,6 +5,11 @@
 @import url(../css/typography.css);
 @import url(../css/home.css);
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0;
     overflow-x: hidden;
