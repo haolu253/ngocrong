@@ -7,6 +7,12 @@ $(document).ready(function () {
         $('body').toggleClass('no-scroll');
     });
 
+    // Floating download
+    $('.floating-download-before').on('click', function (e) {
+        e.preventDefault();
+        $('.floating-download').toggleClass('download-active');
+    });
+
     // Floating to top
     $(window).scroll(function() {
         if ($(this).scrollTop() > 0) {
