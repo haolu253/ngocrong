@@ -141,7 +141,7 @@ a.custom-btn.custom-btn-primary:hover {
     background-color: var(--color-dark);
     color: var(--color-light);
     position: absolute;
-    top: 93px;
+    top: 90px;
     left: calc(var(--global-spacing) * -5.5);
     transform: rotate(-90deg);
     cursor: pointer;
