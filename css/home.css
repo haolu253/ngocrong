@@ -196,3 +196,41 @@
     text-transform: uppercase;
 }
 
+/* Character showcase */
+.character-showcase h2 {
+    font-size: calc(var(--global-text) * 6);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.character-planet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-lg);
+}
+
+.planet {
+    display: flex;
+    flex-direction: column;
+}
+
+.planet img {
+    width: 90px;
+    animation: spin 46s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.planet span {
+    font-size: calc(var(--global-text) * 1.25);
+    font-weight: bold;
+    text-align: center;
+}

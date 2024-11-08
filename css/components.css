@@ -127,7 +127,7 @@ a.custom-btn.custom-btn-primary:hover {
 }
 
 .floating-download.download-active {
-    transform: translate(calc(var(--global-spacing) * -13), -50%);
+    transform: translate(calc(var(--global-spacing) * -11.7), -50%);
 }
 
 .floating-download-before {
