@@ -27,44 +27,68 @@ $(document).ready(function () {
         $('html, body').scrollTop(0);
     });
 
-    // Hide all character info sections initially
-    $('.character-info').hide();
-
     // Click event for selecting a planet
     $('.planet').on('click', function () {
-        // Remove active class from all planets
-        $('.planet').removeClass('active');
-        
-        // Add active class to the clicked planet
-        $(this).addClass('active');
+        // Get the ID of the selected planet
+        const selectedPlanetId = $(this).attr('id');
+        const slickContainerId = `#${selectedPlanetId}-slick`;
 
-        // Get the id of the clicked planet (e.g., 'namek', 'saiyan')
-        const selectedPlanet = $(this).attr('id');
-        
-        // Hide all character info sections
-        $('.character-info').hide();
+        // Remove active class from all planets and add it to the clicked one
+        $('.planet').removeClass('planet-active');
+        $(this).addClass('planet-active');
 
-        // Show the character info related to the selected planet
-        $(`#${selectedPlanet}-character`).fadeIn();
+        // Remove "planet-slick-active" from all slick containers
+        $('.planet-slick').removeClass('planet-slick-active');
 
-        // Reset the character description section
-        $(`#${selectedPlanet}-character .character-name`).text("Name");
-        $(`#${selectedPlanet}-character .character-class`).text("Class");
+        // Add "planet-slick-active" to the selected slick container
+        $(slickContainerId).addClass('planet-slick-active');
+
+        // Check if the selected planet's slider is already initialized
+        if (!$(slickContainerId).find('.planet-character-information').hasClass('slick-initialized')) {
+            // Initialize Slick for planet-character-information
+            $(slickContainerId + ' .planet-character-information').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: slickContainerId + ' .planet-character-thumb'
+            });
+
+            // Initialize Slick for planet-character-thumb
+            $(slickContainerId + ' .planet-character-thumb').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: slickContainerId + ' .planet-character-information',
+                dots: true,
+                centerMode: true,
+                focusOnSelect: true
+            });
+        }
+
+        $(slickContainerId + ' .planet-character-information').slick('slickGoTo', 0);
+        $(slickContainerId + ' .planet-character-thumb').slick('slickGoTo', 0);
     });
 
-    // Click event for selecting a character
-    $('.character-item').on('click', function () {
-        // Get the character details from data attributes
-        const charName = $(this).data('name');
-        const charClass = $(this).data('class');
+    // Initialize the default active planet (Earth)
+    $('#earth').addClass('planet-active');  // Add active class to Earth by default
+    $('.planet-slick').removeClass('planet-slick-active'); // Remove all active classes initially
+    $('#earth-slick').addClass('planet-slick-active');     // Add active class to Earth slick by default
 
-        // Find the nearest character description container and update it
-        const characterInfo = $(this).closest('.character-info');
-        characterInfo.find('.character-name').text(`Tên: ${charName}`);
-        characterInfo.find('.character-class').text(`Lớp: ${charClass}`);
+    // Initialize Earth Slick by default
+    $('#earth-slick .planet-character-information').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '#earth-slick .planet-character-thumb'
+    });
 
-        // Highlight the selected character item
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
+    $('#earth-slick .planet-character-thumb').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '#earth-slick .planet-character-information',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
     });
 });
