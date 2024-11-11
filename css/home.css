@@ -263,6 +263,7 @@
 
 /* Introduction */
 .introduction {
+    margin-bottom: var(--spacing-lg-1);
     padding: var(--spacing-lg-1) 0;
 }
 
@@ -312,11 +313,25 @@
     }
 }
 
+@media screen and (max-width: 992px) {
+    .character-showcase-container {
+        margin-bottom: var(--spacing-lg-4);
+    }
+}
+
 .character-planet {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--gap-lg);
+    gap: var(--gap-xl);
+    margin: var(--spacing-lg-1) 0 var(--spacing-lg-3);
+}
+
+@media screen and (max-width: 992px) {
+    .character-planet {
+        gap: var(--gap-lg);
+        margin: var(--spacing-lg-1) 0;
+    }
 }
 
 .planet {
@@ -352,7 +367,7 @@
 }
 
 .planet-active {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 .planet-slick {
@@ -363,8 +378,45 @@
     display: block; /* Only display the active one */
 }
 
+.slick-prev,
+.slick-next {
+    width: 64px;
+    height: 64px;
+    top: unset;
+    bottom: -70px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 64px;
+    color: var(--color-dark);
+}
+
+.slick-prev {
+    left: 35%;
+    transform: translateX(-50%);
+}
+
+.slick-next {
+    left: 65%;
+    right: unset;
+    transform: translateX(-50%);
+}
+
 .planet-character-information {
     margin: var(--spacing-lg-2) 0;
+}
+
+@media screen and (min-width: 992px) {
+    .planet-character-information {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--gap-lg);
+    }
+}
+
+.planet-character-information .planet-character {
+    width: 100%;
 }
 
 .planet-character {
@@ -377,7 +429,7 @@
 }
 
 .planet-character h3 {
-    font-size: calc(var(--global-text) * 3);
+    font-size: calc(var(--global-text) * 2);
     text-align: center;
     width: 100%;
     margin: 0;
@@ -392,5 +444,17 @@
 
 .planet-character img {
     width: auto;
-    height: 460px;
+    height: 300px;
+    padding: var(--global-spacing) 0;
+    object-fit: contain;
+}
+
+.planet-character-small {
+    background-image: url(../img/dot_gray.png);
+}
+
+.planet-character-small img {
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
 }
