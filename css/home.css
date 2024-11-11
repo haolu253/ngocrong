@@ -13,14 +13,20 @@
     grid-template-columns: 70% 30%;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
     .hero-section-container {
         grid-template-columns: 1fr;
     }
 }
 
 .hero-left {
-    padding: var(--spacing-lg-3) 0;
+    padding: var(--spacing-lg-1) 0;
+}
+
+@media screen and (max-width: 992px) {
+    .hero-left {
+        justify-content: center;
+    }
 }
 
 .hero-left h1,
@@ -31,9 +37,53 @@
     letter-spacing: 2px;
 }
 
+.hero-left h1 {
+    font-size: calc(var(--global-text) * 6);
+}
+
+.hero-left h3 {
+    font-size: calc(var(--global-text) * 3);
+    margin-top: -20px;
+}
+
+@media screen and (max-width: 992px) {
+    .hero-left h1,
+    .hero-left h3 {
+        text-align: center;
+    }
+
+    .hero-left h1 {
+        font-size: calc(var(--global-text) * 3);
+    }
+
+    .hero-left h3 {
+        font-size: calc(var(--global-text) * 1.25);
+        margin-top: -10px;
+    }
+}
+
 .hero-download {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--global-gap);
+    margin-top: var(--spacing-lg-3);
+}
+
+.hero-download a.custom-btn {
+    padding: var(--global-spacing) var(--spacing-lg-2);
+    border: 3px solid var(--color-dark);
+}
+
+@media screen and (max-width: 992px) {
+    .hero-download a.custom-btn {
+        padding: var(--spacing-sm-2) var(--global-spacing);
+    }
+}
+
+.hero-download a.custom-btn:hover,
+.hero-download a.custom-btn:focus {
+    background-color: var(--color-light);
+    color: var(--color-dark);
 }
 
 .hero-right {
@@ -41,26 +91,45 @@
     justify-content: flex-end;
 }
 
+@media screen and (max-width: 992px) {
+    .hero-right {
+        justify-content: center;
+    }
+}
+
 .hero-right img {
     width: auto;
     max-height: 460px;
 }
 
+@media screen and (max-width: 992px) {
+    .hero-right img {
+        width: auto;
+        max-height: 300px;
+    }
+}
+
 .hero-section-bottom {
     width: 100%;
-    height: 90px;
+    height: 50px;
     margin-bottom: var(--spacing-lg-2);
     position: relative;
-    transform: skewY(3.2deg);
+    transform: skewY(1.5deg);
+}
+
+@media screen and (max-width: 992px) {
+    .hero-section-bottom {
+        margin-bottom: var(--global-spacing);
+    }
 }
 
 .hero-section-bottom::before {
     content: '';
     width: 100%;
-    height: 64px;
+    height: 50px;
     position: absolute;
     background-color: var(--color-primary);
-    transform: skewY(-3.2deg);
+    transform: skewY(-1.5deg);
 }
 
 /* Advantage */
@@ -71,12 +140,13 @@
 .advantage h2 {
     font-size: calc(var(--global-text) * 6);
     text-transform: uppercase;
+    text-shadow: -2px -2px 2px var(--color-light), 2px -2px 2px var(--color-light), -2px 2px 2px var(--color-light), 2px 2px 2px var(--color-light);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
     .advantage h2 {
-        text-align: center;
-        margin-bottom: 110px;
+        font-size: calc(var(--global-text) * 3);
+        margin-bottom: 40px;
     }
 }
 
@@ -98,7 +168,7 @@
     background-size: contain;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
     .advantage-content::after {
         top: -105px;
         bottom: unset;
@@ -131,7 +201,7 @@
     position: relative;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
     .summary-container {
         flex-direction: column;
         min-height: unset;
@@ -141,16 +211,20 @@
 .summary h2 {
     font-size: calc(var(--global-text) * 6);
     text-transform: uppercase;
+    text-shadow: -2px -2px 2px var(--color-light), 2px -2px 2px var(--color-light), -2px 2px 2px var(--color-light), 2px 2px 2px var(--color-light);
     margin-left: -122px;
     position: absolute;
     transform: rotate(-90deg);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
     .summary h2 {
-        margin: 0;
-        position: unset;
+        font-size: calc(var(--global-text) * 3);
+        width: 100%;
+        margin-left: 0;
+        position: relative;
         transform: rotate(0deg);
+        z-index: 20;
     }
 }
 
@@ -158,13 +232,14 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: 10;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
     .summary img {
         max-width: 200px;
         position: absolute;
-        top: 0;
+        top: -130px;
         bottom: unset;
         right: 0;
     }
@@ -177,11 +252,12 @@
     margin-right: 364px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
     .summary-content {
         max-width: 100%;
         margin-left: 0;
         margin-right: 0;
+        padding: 0;
     }
 }
 
@@ -194,6 +270,32 @@
     font-size: calc(var(--global-text) * 6);
     text-align: center;
     text-transform: uppercase;
+    text-shadow: -2px -2px 2px var(--color-light), 2px -2px 2px var(--color-light), -2px 2px 2px var(--color-light), 2px 2px 2px var(--color-light);
+}
+
+.introduction p {
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    .introduction h2 {
+        font-size: calc(var(--global-text) * 3);
+    }
+}
+
+.introduction-skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-sm);
+    margin-top: var(--spacing-lg-1);
+}
+
+.introduction-skill img {
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 /* Character showcase */
@@ -201,6 +303,13 @@
     font-size: calc(var(--global-text) * 6);
     text-align: center;
     text-transform: uppercase;
+    text-shadow: -2px -2px 2px var(--color-light), 2px -2px 2px var(--color-light), -2px 2px 2px var(--color-light), 2px 2px 2px var(--color-light);
+}
+
+@media screen and (max-width: 992px) {
+    .character-showcase h2 {
+        font-size: calc(var(--global-text) * 3);
+    }
 }
 
 .character-planet {
@@ -218,6 +327,7 @@
 .planet img {
     width: 90px;
     animation: spin 46s linear infinite;
+    cursor: pointer;
 }
 
 @keyframes spin {
@@ -233,4 +343,21 @@
     font-size: calc(var(--global-text) * 1.25);
     font-weight: bold;
     text-align: center;
+}
+
+.planet.active {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.character-item {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid transparent;
+    transition: background 0.2s;
+}
+
+.character-item.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: var(--color-dark);
 }

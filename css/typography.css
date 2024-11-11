@@ -6,7 +6,7 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald';
-    line-height: 150%;
+    line-height: 135%;
     margin-top: 0;
     padding-bottom: var(--gap-xs);
 }
