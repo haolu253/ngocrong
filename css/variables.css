@@ -22,6 +22,9 @@
     --color-text: #1A1A1A;
     --color-text-light: #333333;
     --color-text-lighter: #666666;
+    --color-top-1: #FFD700;
+    --color-top-2: #C0C0C0;
+    --color-top-3: #CD7F32;
 
     /* Breakpoints */
     --sm: 576px;

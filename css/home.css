@@ -38,7 +38,7 @@
 }
 
 .hero-left h1 {
-    font-size: calc(var(--global-text) * 6);
+    font-size: calc(var(--global-text) * 5);
 }
 
 .hero-left h3 {
@@ -138,7 +138,7 @@
 }
 
 .advantage h2 {
-    font-size: calc(var(--global-text) * 6);
+    font-size: calc(var(--global-text) * 5);
     text-transform: uppercase;
     text-shadow: -2px -2px 2px var(--color-light), 2px -2px 2px var(--color-light), -2px 2px 2px var(--color-light), 2px 2px 2px var(--color-light);
 }
@@ -209,7 +209,7 @@
 }
 
 .summary h2 {
-    font-size: calc(var(--global-text) * 6);
+    font-size: calc(var(--global-text) * 5);
     text-transform: uppercase;
     text-shadow: -2px -2px 2px var(--color-light), 2px -2px 2px var(--color-light), -2px 2px 2px var(--color-light), 2px 2px 2px var(--color-light);
     margin-left: -122px;
@@ -268,7 +268,7 @@
 }
 
 .introduction h2 {
-    font-size: calc(var(--global-text) * 6);
+    font-size: calc(var(--global-text) * 5);
     text-align: center;
     text-transform: uppercase;
     text-shadow: -2px -2px 2px var(--color-light), 2px -2px 2px var(--color-light), -2px 2px 2px var(--color-light), 2px 2px 2px var(--color-light);
@@ -301,7 +301,7 @@
 
 /* Character showcase */
 .character-showcase h2 {
-    font-size: calc(var(--global-text) * 6);
+    font-size: calc(var(--global-text) * 5);
     text-align: center;
     text-transform: uppercase;
     text-shadow: -2px -2px 2px var(--color-light), 2px -2px 2px var(--color-light), -2px 2px 2px var(--color-light), 2px 2px 2px var(--color-light);

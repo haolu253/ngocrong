@@ -4,6 +4,7 @@
 @import url(../css/font-face.css);
 @import url(../css/typography.css);
 @import url(../css/home.css);
+@import url(../css/ranking.css);
 
 html,
 body {
@@ -17,6 +18,11 @@ body {
 
 body.no-scroll {
     overflow: hidden;
+}
+
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
 }
 
 .web-content {
